@@ -30,7 +30,7 @@ const Hero = () => {
                   maxW={{ md: "xl", lg: "md", xl: "xl" }}
                 >
                   <Heading size={useBreakpointValue({ base: "md", md: "xl" })}>
-                    Recurit engineers with video
+                    Recruit engineers with video
                   </Heading>
                   <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
                     Syurf helps you host engaging events to get prospective
