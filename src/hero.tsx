@@ -33,9 +33,10 @@ const Hero = () => {
                     Recruit engineers with video
                   </Heading>
                   <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                    Syurf helps you host engaging events to get prospective
-                    candidates excited about your company.
+                    Get <b>50% more</b> engineers excited about your company
+                    with video job postings.
                   </Text>
+                  .
                 </Stack>
               </Stack>
               <Stack direction={{ base: "column", md: "row" }} spacing="3">
