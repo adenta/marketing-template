@@ -30,11 +30,11 @@ const Hero = () => {
                   maxW={{ md: "xl", lg: "md", xl: "xl" }}
                 >
                   <Heading size={useBreakpointValue({ base: "md", md: "xl" })}>
-                    Recruit engineers with video
+                    Build software 100x faster
                   </Heading>
                   <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                    Get <b>50% more</b> engineers excited about your company
-                    with video job postings.
+                    Supercharges your engineering team, with full stack react
+                    components.
                   </Text>
                   .
                 </Stack>
