@@ -30,11 +30,11 @@ const Hero = () => {
                   maxW={{ md: "xl", lg: "md", xl: "xl" }}
                 >
                   <Heading size={useBreakpointValue({ base: "md", md: "xl" })}>
-                    Build software 100x faster
+                    Full Stack Document Management
                   </Heading>
                   <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                    Supercharges your engineering team, with full stack react
-                    components.
+                    Add E-Sign &amp; Document Management to your SaaS in
+                    minutes.
                   </Text>
                   .
                 </Stack>

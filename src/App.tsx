@@ -8,7 +8,9 @@ import {
   Heading,
   Input,
 } from "@chakra-ui/react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Hero from "./hero";
+import Waitlist from "./waitlist";
+
 const myTheme = extendTheme(
   {
     colors: { ...theme.colors, brand: theme.colors.blue },
@@ -18,13 +20,8 @@ const myTheme = extendTheme(
 function App() {
   return (
     <ChakraProvider theme={myTheme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<h1>hello</h1>}>
-            <Route path="/documents/:documentId" element={<h1>doc</h1>} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Hero />
+      <Waitlist />
     </ChakraProvider>
   );
 }
