@@ -39,7 +39,7 @@ const Waitlist = () => {
                 Join our waitlist
               </Heading>
               <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Be among the first to go live on Syurf
+                Be among the first to go live on Scribble
               </Text>
             </Stack>
             <Stack
