@@ -20,7 +20,10 @@ const Waitlist = () => {
   }, []);
 
   return (
-    <Box bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )">
+    <Box
+      id="waitlist"
+      bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )"
+    >
       <Container py={{ base: "48", md: "72" }}>
         <Box
           bg="bg-surface"

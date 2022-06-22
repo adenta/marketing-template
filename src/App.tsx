@@ -8,9 +8,10 @@ import {
   Heading,
   Input,
 } from "@chakra-ui/react";
-import Hero from "./hero";
+import { Hero } from "./hero";
 import Waitlist from "./waitlist";
 import Logo from "./logo";
+import Features from "./features";
 
 const myTheme = extendTheme(
   {
@@ -22,6 +23,7 @@ function App() {
   return (
     <ChakraProvider theme={myTheme}>
       <Hero />
+      <Features />
       <Waitlist />
     </ChakraProvider>
   );
