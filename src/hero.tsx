@@ -55,7 +55,7 @@ export const Hero = () => {
               letterSpacing="tight"
               whiteSpace="pre-wrap"
             >
-              {"React SDK to deal \nwith documents"}
+              {"Build a Docusign-like feature in an afternoon"}
             </Heading>
             <Text
               whiteSpace="pre-wrap"
@@ -64,7 +64,9 @@ export const Hero = () => {
               maxW="xl"
               mx="auto"
             >
-              Hooks &amp; components to build legal software features
+              {
+                "React hooks & components to\n embed legal software into your platform"
+              }
             </Text>
           </Box>
 
