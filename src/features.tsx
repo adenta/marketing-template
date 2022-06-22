@@ -17,19 +17,18 @@ import { IoRocketSharp } from "react-icons/io5";
 
 export const features = [
   {
-    name: "210+ Components",
+    name: "Full Stack",
     description:
       "Chakra UI Pro has 210+ componentsto help you develop your project faster.",
     icon: BsStars,
   },
   {
     name: "Production Ready",
-    description:
-      "Effortlessly create your next production-ready experience with Chakra UI Pro components.",
+    description: "security",
     icon: IoRocketSharp,
   },
   {
-    name: "Accessible",
+    name: "Legally Compliant",
     description:
       "Accessibility first. That's why we pay attention to accessibility right from the start.",
     icon: FaAccessibleIcon,
@@ -54,8 +53,9 @@ export const Features = () => (
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: "lg", md: "xl" }}>
-            A bundle of 210+ ready-to-use, responsive and accessible components
-            with clever structured sourcode files.
+            A full stack solution, from managing document upload &amp; storage,
+            an embeddable PDF editor, flexible e-sign components, and helpers
+            for printing &amp; downloading signed documents.
           </Text>
         </Stack>
         <Stack
