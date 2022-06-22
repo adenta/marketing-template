@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import Hero from "./hero";
 import Waitlist from "./waitlist";
+import Logo from "./logo";
 
 const myTheme = extendTheme(
   {

@@ -11,6 +11,7 @@ import {
   LinkBox,
   LinkOverlay,
 } from "@chakra-ui/react";
+import Logo from "./logo";
 
 const Hero = () => {
   return (
@@ -29,6 +30,7 @@ const Hero = () => {
                   spacing={{ base: "4", md: "6" }}
                   maxW={{ md: "xl", lg: "md", xl: "xl" }}
                 >
+                  <Logo />
                   <Heading size={useBreakpointValue({ base: "md", md: "xl" })}>
                     Full Stack Document Management
                   </Heading>
