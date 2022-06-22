@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Heading,
   Icon,
   Image,
@@ -10,28 +11,28 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { FiArrowRight } from "react-icons/fi";
-import { BsStars } from "react-icons/bs";
-import { FaAccessibleIcon } from "react-icons/fa";
-import { IoRocketSharp } from "react-icons/io5";
+import { FiArrowRight, FiWifiOff } from "react-icons/fi";
+import { FaBalanceScale } from "react-icons/fa";
+import { GiFruitBowl } from "react-icons/gi";
 
 export const features = [
   {
-    name: "Full Stack",
-    description:
-      "Chakra UI Pro has 210+ componentsto help you develop your project faster.",
-    icon: BsStars,
-  },
-  {
-    name: "Production Ready",
-    description: "security",
-    icon: IoRocketSharp,
-  },
-  {
     name: "Legally Compliant",
     description:
-      "Accessibility first. That's why we pay attention to accessibility right from the start.",
-    icon: FaAccessibleIcon,
+      "Automatically monitor documents when they are being signed so they can hold up in court.",
+    icon: FaBalanceScale,
+  },
+  {
+    name: "Bring your own UI",
+    description:
+      "No iframes here, we give you the tools to embed Scribble in your platform, however you want",
+    icon: GiFruitBowl,
+  },
+  {
+    name: "Offline Friendly",
+    description:
+      "Store signiture data in browser storage and upload when the device is back online",
+    icon: FiWifiOff,
   },
 ];
 
@@ -53,9 +54,8 @@ export const Features = () => (
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: "lg", md: "xl" }}>
-            A full stack solution, from managing document upload &amp; storage,
-            an embeddable PDF editor, flexible e-sign components, and helpers
-            for printing &amp; downloading signed documents.
+            Ready to use components for managing document upload, adding text
+            &amp; signature fields, e-sign, and downloading signed documents.
           </Text>
         </Stack>
         <Stack
@@ -91,14 +91,15 @@ export const Features = () => (
                     </Text>
                     <Text color="muted">{feature.description}</Text>
                   </Stack>
-                  <Button
+                  <Divider />
+                  {/* <Button
                     variant="link"
                     colorScheme="blue"
                     rightIcon={<FiArrowRight fontSize="1.25rem" />}
                     alignSelf="start"
                   >
                     Read more
-                  </Button>
+                  </Button> */}
                 </Stack>
               </Stack>
             ))}
