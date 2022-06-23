@@ -16,7 +16,7 @@ import referlist from "referlist";
 
 const Waitlist = () => {
   useEffect(() => {
-    referlist.initialize({ domain: "syurf" });
+    referlist.initialize({ domain: "scribble" });
   }, []);
 
   return (
