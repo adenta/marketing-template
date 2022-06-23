@@ -31,7 +31,7 @@ export const features = [
   {
     name: "Offline Friendly",
     description:
-      "Store signiture data in browser storage and upload when the device is back online",
+      "Store signature data in browser storage and upload when the device is back online",
     icon: FiWifiOff,
   },
 ];

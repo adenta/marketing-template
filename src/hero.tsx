@@ -7,6 +7,11 @@ import {
   Img,
   SimpleGrid,
   Stack,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
   Text,
   useColorModeValue as mode,
   VisuallyHidden,
@@ -47,7 +52,7 @@ export const Hero = () => {
           <Box textAlign="center">
             <Heading
               as="h1"
-              size="3xl"
+              size="4xl"
               fontWeight="extrabold"
               maxW="48rem"
               mx="auto"
@@ -55,7 +60,7 @@ export const Hero = () => {
               letterSpacing="tight"
               whiteSpace="pre-wrap"
             >
-              {"Build a Docusign-like feature in an afternoon"}
+              {"Embed a PDF Editor &\n e-sign in your app"}
             </Heading>
             <Text
               whiteSpace="pre-wrap"
@@ -65,7 +70,7 @@ export const Hero = () => {
               mx="auto"
             >
               {
-                "React hooks & components to\n embed legal software into your platform"
+                "React hooks & components to\n add legal workflows to your platform"
               }
             </Text>
           </Box>
@@ -102,7 +107,24 @@ export const Hero = () => {
             </Button>
           </Stack>
           <Center>
-            <video src="/demo.mp4" muted autoPlay loop controls />
+            <Tabs variant="enclosed" isFitted>
+              <TabList>
+                <Tab _selected={{ background: "white" }}>Create</Tab>
+                <Tab _selected={{ background: "white" }}>Sign</Tab>
+                <Tab _selected={{ background: "white" }}>Download</Tab>
+              </TabList>
+              <TabPanels borderRadius="lg" backgroundColor="white">
+                <TabPanel>
+                  <video src="/create.mp4" muted autoPlay loop controls />
+                </TabPanel>
+                <TabPanel>
+                  <video src="/sign.mp4" muted autoPlay loop controls />
+                </TabPanel>
+                <TabPanel>
+                  <video src="/download.mp4" muted autoPlay loop controls />
+                </TabPanel>
+              </TabPanels>
+            </Tabs>
           </Center>
         </Box>
       </Box>
