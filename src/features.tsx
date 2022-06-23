@@ -25,13 +25,13 @@ export const features = [
   {
     name: "Bring your own UI",
     description:
-      "No iframes here, we give you the tools to embed Scribble in your platform, however you want",
+      "No iframes here, we give you the tools to embed Scribble in your platform, however you want.",
     icon: GiFruitBowl,
   },
   {
     name: "Offline Friendly",
     description:
-      "Store signature data in browser storage and upload when the device is back online",
+      "Store signature data in browser storage and upload when the device is back online.",
     icon: FiWifiOff,
   },
 ];
