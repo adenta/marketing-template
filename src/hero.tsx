@@ -60,7 +60,7 @@ export const Hero = () => {
               letterSpacing="tight"
               whiteSpace="pre-wrap"
             >
-              {"Embeded PDF editor & e-sign for your app"}
+              {"Embed a PDF editor & e-sign in your app"}
             </Heading>
             <Text
               whiteSpace="pre-wrap"
