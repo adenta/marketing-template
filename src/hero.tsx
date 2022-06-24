@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 import * as React from "react";
 import { FaPlay } from "react-icons/fa";
+import CodeSample from "./code-samples";
 import Create from "./code-samples/create";
 
 export const Hero = () => {
@@ -120,35 +121,15 @@ export const Hero = () => {
               <TabPanels borderRadius="lg" backgroundColor="white">
                 <TabPanel>
                   <video src="/create.mp4" muted autoPlay loop controls />
-                  <Accordion allowToggle>
-                    <AccordionItem>
-                      <h2>
-                        <AccordionButton>
-                          <Box flex="1" textAlign="left">
-                            Example <code>index.tsx</code>
-                          </Box>
-                          <AccordionIcon />
-                        </AccordionButton>
-                      </h2>
-                      <AccordionPanel
-                        background="black"
-                        color="white"
-                        pb={4}
-                        borderBottomEndRadius="lg"
-                        borderBottomStartRadius="lg"
-                      >
-                        <code>
-                          <pre>{Create()}</pre>
-                        </code>
-                      </AccordionPanel>
-                    </AccordionItem>
-                  </Accordion>
+                  <CodeSample id="create" />
                 </TabPanel>
                 <TabPanel>
                   <video src="/sign.mp4" muted autoPlay loop controls />
+                  <CodeSample id="sign" />
                 </TabPanel>
                 <TabPanel>
                   <video src="/download.mp4" muted autoPlay loop controls />
+                  <CodeSample id="download" />
                 </TabPanel>
               </TabPanels>
             </Tabs>

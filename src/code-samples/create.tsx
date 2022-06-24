@@ -1,5 +1,4 @@
-const Create = () => {
-  return `import * as React from "react";
+const Create = `import * as React from "react";
   import { usePage, PDFEditor } from "@scribble";
   
   const Create = (pageId) => {
@@ -35,6 +34,5 @@ const Create = () => {
   
   export default Create;
   `;
-};
 
 export default Create;
