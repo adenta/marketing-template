@@ -5,12 +5,19 @@ import {
   Box,
   AccordionIcon,
   AccordionPanel,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import Create from "./create";
 import Download from "./download";
 import Sign from "./sign";
 
 const CodeSample = ({ id }: { id: string }) => {
+  const display = useBreakpointValue({ base: false, md: true });
+
+  if (!display) {
+    return <></>;
+  }
+
   return (
     <Accordion allowToggle>
       <AccordionItem>
