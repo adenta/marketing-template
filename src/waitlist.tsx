@@ -21,7 +21,7 @@ const Waitlist = () => {
 
   return (
     <Box
-      id="waitlist"
+      id="requestaccess"
       bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )"
     >
       <Container py={{ base: "48", md: "72" }}>
@@ -39,10 +39,12 @@ const Waitlist = () => {
           >
             <Stack spacing={{ base: "4", md: "5" }}>
               <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
-                Join our waitlist
+                Request Beta Access
               </Heading>
               <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Be among the first to go live on Scribble
+                Scribble couldn't be possible without the amazing network of
+                early supporters we have. If you want to be among the first
+                companies to go live on Scribble, lets get to work!
               </Text>
             </Stack>
             <Stack
@@ -63,7 +65,7 @@ const Waitlist = () => {
                 </FormHelperText>
               </FormControl>
               <Button id="referlistbutton" variant="primary" size="lg">
-                Join Waitlist
+                Request
               </Button>
             </Stack>
           </Stack>
@@ -71,17 +73,6 @@ const Waitlist = () => {
       </Container>
     </Box>
   );
-  // return (
-  //   <Box padding="56" background="brand.500">
-  //     <Heading color="white" paddingBottom="8">
-  //       Interested? Let's talk.
-  //     </Heading>
-  //     <HStack>
-  //       <Input placeholder="john@example.com" id="referlistemail" />
-  //       <Button id="referlistbutton">Join Waitlist</Button>
-  //     </HStack>
-  //   </Box>
-  // );
 };
 
 export default Waitlist;

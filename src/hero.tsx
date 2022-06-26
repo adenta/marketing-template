@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 import * as React from "react";
 import { FaPlay } from "react-icons/fa";
+import { IoMdWarning } from "react-icons/io";
 import CodeSample from "./code-samples";
 import Create from "./code-samples/create";
 
@@ -90,25 +91,27 @@ export const Hero = () => {
           >
             <Button
               as="a"
-              href="#waitlist"
+              href="#requestaccess"
               size="lg"
               colorScheme="blue"
               px="8"
               fontWeight="bold"
               fontSize="md"
             >
-              Join Waitlist
+              Request Access
             </Button>
             <Button
               variant="outline"
               as="a"
-              href="#"
+              href="https://scribbleapi.notion.site/scribbleapi/Scribble-API-Docs-1faf2ee9b98c47f587c2cc08c244d811"
               size="lg"
               px="8"
+              target="_blank"
               fontWeight="bold"
               fontSize="md"
+              leftIcon={<IoMdWarning />}
             >
-              API Docs (coming soon)
+              V0 Docs (Under Construction)
             </Button>
           </Stack>
           <Center>
