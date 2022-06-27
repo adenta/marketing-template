@@ -109,9 +109,8 @@ export const Hero = () => {
               target="_blank"
               fontWeight="bold"
               fontSize="md"
-              leftIcon={<IoMdWarning />}
             >
-              V0 Docs (Under Construction)
+              API Documentation
             </Button>
           </Stack>
           <Center>
