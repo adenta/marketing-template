@@ -77,7 +77,7 @@ export const Hero = () => {
               maxW="xl"
               mx="auto"
             >
-              {"API suite to\n add legal workflows to your platform"}
+              {"API suite to add legal workflows to your platform"}
             </Text>
           </Box>
 
