@@ -44,8 +44,8 @@ const Waitlist = () => {
                 We take care of the rest! ✨
               </Heading>
               <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Every monday we will email you highlights from your pets
-                adventure through the Whiskerverse:
+                Every week we will email you highlights from your pets adventure
+                through the Whiskerverse:
               </Text>
               <Wrap spacing="6">
                 <WrapItem>
