@@ -8,7 +8,15 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-const FeatureRow = ({ image, caption, reverseDirection }) => {
+const FeatureRow = ({
+  image,
+  caption,
+  reverseDirection,
+}: {
+  image: any;
+  caption: any;
+  reverseDirection?: boolean;
+}) => {
   const fontSize = useBreakpointValue({ base: "sm", md: "sm", lg: "md" });
   return (
     <Stack direction={["column", reverseDirection ? "row" : "row-reverse"]}>
