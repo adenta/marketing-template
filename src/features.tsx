@@ -56,56 +56,6 @@ export const Features = () => (
           image={miley}
           caption={"Hold a treat behind the camera so they look up!"}
         />
-        {/* <Stack direction={["column", "row"]}>
-          <Flex width={["100%", "80%"]} align="center" justify="center">
-            <Heading
-              borderRadius="lg"
-              maxWidth="96"
-              padding="3"
-              background="gray.100"
-              size="md"
-              textAlign="center"
-              color={mode("blue.600", "blue.300")}
-              whiteSpace="pre-wrap"
-            >
-              {"Use a variety of poses"}
-            </Heading>
-          </Flex>
-          <Box width="full" overflow="hidden">
-            <Image
-              maxW="100%"
-              minH={{ base: "100%", lg: "560px" }}
-              objectFit="cover"
-              src={miley2}
-              alt="Miley"
-            />
-          </Box>
-        </Stack>
-        <Stack direction={["column", "row"]}>
-          <Flex width="80%" align="center" justify="center">
-            <Heading
-              borderRadius="lg"
-              maxWidth="96"
-              padding="3"
-              background="gray.100"
-              size="md"
-              textAlign="center"
-              color={mode("blue.600", "blue.300")}
-              whiteSpace="pre-wrap"
-            >
-              {"Hold a treat behind the camera so they look up!"}
-            </Heading>
-          </Flex>
-          <Box width="full" overflow="hidden">
-            <Image
-              maxW="100%"
-              minH={{ base: "100%", lg: "560px" }}
-              objectFit="cover"
-              src={miley3}
-              alt="Miley"
-            />
-          </Box>
-        </Stack> */}
       </Stack>
     </Container>
   </Box>

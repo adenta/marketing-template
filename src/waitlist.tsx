@@ -22,6 +22,8 @@ import preview1 from "./images/preview1.jpg";
 import preview2 from "./images/preview2.jpg";
 import preview3 from "./images/preview3.jpg";
 import preview4 from "./images/preview4.jpg";
+import preview5 from "./images/preview5.jpg";
+import preview6 from "./images/preview6.jpg";
 
 const Waitlist = () => {
   return (
@@ -56,6 +58,12 @@ const Waitlist = () => {
                 </WrapItem>
                 <WrapItem>
                   <Image src={preview3} />
+                </WrapItem>
+                <WrapItem>
+                  <Image src={preview6} />
+                </WrapItem>
+                <WrapItem>
+                  <Image src={preview5} />
                 </WrapItem>
                 <WrapItem>
                   <Image src={preview4} />
