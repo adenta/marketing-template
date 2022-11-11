@@ -1,143 +1,112 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
   Box,
   Button,
-  Center,
-  Circle,
   Heading,
   Img,
-  SimpleGrid,
+  Link,
   Stack,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
   Text,
   useColorModeValue as mode,
-  VisuallyHidden,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import * as React from "react";
-import { FaPlay } from "react-icons/fa";
-import { IoMdWarning } from "react-icons/io";
-import CodeSample from "./code-samples";
-import Create from "./code-samples/create";
+import { HiPlay } from "react-icons/hi";
+import heroImage from "./images/hero-image.jpg";
 
-export const Hero = () => {
+export function Hero() {
   return (
-    <Box>
-      <Img
-        opacity={0.1}
-        left="10"
-        top="10"
-        zIndex="-1"
-        position="absolute"
-        width="200px"
-        borderRadius="lg"
-        src="animated-logo.gif"
-      />
-      <Img
-        opacity={0.1}
-        right="30"
-        top="400"
-        zIndex="-1"
-        position="absolute"
-        width="200px"
-        borderRadius="lg"
-        src="second-animated-logo.gif"
-      />
-
-      <Box as="section" py="7.5rem">
-        <Box
-          maxW={{ base: "xl", md: "5xl" }}
-          mx="auto"
-          px={{ base: "6", md: "8" }}
+    <Box as="section" bg={mode("gray.50", "gray.800")} pt="16" pb="24">
+      <Box
+        maxW={{ base: "xl", md: "7xl" }}
+        mx="auto"
+        px={{ base: "6", md: "8" }}
+      >
+        <Stack
+          direction={{ base: "column", lg: "row" }}
+          spacing={{ base: "3rem", lg: "2rem" }}
+          mt="8"
+          align={{ lg: "center" }}
+          justify="space-between"
         >
-          <Box textAlign="center">
+          <Box flex="1" maxW={{ lg: "520px" }}>
+            <Text
+              fontSize="xl"
+              style={{ fontVariant: "small-caps" }}
+              fontWeight="semibold"
+              color={mode("blue.600", "blue.300")}
+              letterSpacing="wide"
+            >
+              Whiskerverse
+            </Text>
             <Heading
               as="h1"
-              size="4xl"
+              size="3xl"
+              color={mode("blue.600", "blue.300")}
+              mt="8"
               fontWeight="extrabold"
-              maxW="48rem"
-              mx="auto"
-              lineHeight="1.2"
               letterSpacing="tight"
-              whiteSpace="pre-wrap"
             >
-              {"Embed a PDF editor & e-sign in your app"}
+              AI pictures of your pet, weekly
             </Heading>
             <Text
-              whiteSpace="pre-wrap"
-              fontSize="xl"
+              color={mode("gray.600", "gray.400")}
               mt="4"
-              maxW="xl"
-              mx="auto"
+              fontSize="lg"
+              fontWeight="medium"
             >
-              {"API suite to add legal workflows to your platform"}
+              We use magic &amp; science to track your pet across the{" "}
+              <i>Whiskerverse</i>, and email them to you every monday.
+            </Text>
+            <Stack direction={{ base: "column", md: "row" }} spacing="4" mt="8">
+              <Button
+                size="lg"
+                minW="210px"
+                colorScheme="blue"
+                height="14"
+                px="8"
+              >
+                Buy Now
+              </Button>
+            </Stack>
+            <Text mt="8" color={mode("gray.600", "gray.400")}>
+              Already have an account?{" "}
+              <Link href="#" textDecoration="underline">
+                Log in
+              </Link>
             </Text>
           </Box>
-
-          <Stack
-            justify="center"
-            direction={{ base: "column", md: "row" }}
-            mt="10"
-            mb="20"
-            spacing="4"
-            align="center"
+          <motion.div
+            animate={{
+              translateY: [0, 7, 0],
+            }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
           >
-            <Button
-              as="a"
-              href="#requestaccess"
-              size="lg"
-              colorScheme="blue"
-              px="8"
-              fontWeight="bold"
-              fontSize="md"
+            <Box
+              pos="relative"
+              w={{ base: "full", lg: "560px" }}
+              h={{ base: "auto", lg: "560px" }}
             >
-              Request Access
-            </Button>
-            <Button
-              variant="outline"
-              as="a"
-              href="https://scribbleapi.notion.site/scribbleapi/Scribble-API-Docs-1faf2ee9b98c47f587c2cc08c244d811"
-              size="lg"
-              px="8"
-              target="_blank"
-              fontWeight="bold"
-              fontSize="md"
-            >
-              API Documentation
-            </Button>
-          </Stack>
-          <Center>
-            <Tabs variant="enclosed" isFitted>
-              <TabList>
-                <Tab _selected={{ background: "white" }}>Create</Tab>
-                <Tab _selected={{ background: "white" }}>Sign</Tab>
-                <Tab _selected={{ background: "white" }}>Download</Tab>
-              </TabList>
-              <TabPanels borderRadius="lg" backgroundColor="white">
-                <TabPanel>
-                  <video src="/create.mp4" muted autoPlay loop controls />
-                  <CodeSample id="create" />
-                </TabPanel>
-                <TabPanel>
-                  <video src="/sign.mp4" muted autoPlay loop controls />
-                  <CodeSample id="sign" />
-                </TabPanel>
-                <TabPanel>
-                  <video src="/download.mp4" muted autoPlay loop controls />
-                  <CodeSample id="download" />
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
-          </Center>
-        </Box>
+              <Img
+                w="full"
+                pos="relative"
+                zIndex="1"
+                h={{ lg: "100%" }}
+                objectFit="cover"
+                src={heroImage}
+                alt="Miley"
+              />
+              <Box
+                pos="absolute"
+                w="100%"
+                h="100%"
+                top="-4"
+                left="-4"
+                bg={mode("gray.200", "gray.700")}
+              />
+            </Box>
+          </motion.div>
+        </Stack>
       </Box>
     </Box>
   );
-};
+}
