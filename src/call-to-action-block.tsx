@@ -14,7 +14,7 @@ const CallToActionBlock = () => {
     <Box>
       <Stack direction={{ base: "column", md: "row" }} spacing="4" mt="8">
         <LinkBox>
-          <LinkOverlay href="https://checkout.square.site/merchant/8BQ7QNMEQYXFY/checkout/E5VGN6VN4K5YECF4ULQSTYXW">
+          <LinkOverlay href="https://buy.stripe.com/4gw8zp8MC6yk3kI6oo">
             <Button
               size="lg"
               minW="210px"
