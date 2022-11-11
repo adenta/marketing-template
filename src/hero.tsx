@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 import * as React from "react";
 import { HiPlay } from "react-icons/hi";
+import CallToActionBlock from "./call-to-action-block";
 import heroImage from "./images/hero-image.jpg";
 
 export function Hero() {
@@ -57,23 +58,7 @@ export function Hero() {
               We use magic &amp; science to track your pet across the{" "}
               <i>Whiskerverse</i>, and email them to you every monday.
             </Text>
-            <Stack direction={{ base: "column", md: "row" }} spacing="4" mt="8">
-              <Button
-                size="lg"
-                minW="210px"
-                colorScheme="blue"
-                height="14"
-                px="8"
-              >
-                Buy Now
-              </Button>
-            </Stack>
-            <Text mt="8" color={mode("gray.600", "gray.400")}>
-              Already have an account?{" "}
-              <Link href="#" textDecoration="underline">
-                Log in
-              </Link>
-            </Text>
+            <CallToActionBlock />
           </Box>
           <motion.div
             animate={{

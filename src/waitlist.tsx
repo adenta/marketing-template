@@ -10,21 +10,23 @@ import {
   Stack,
   useBreakpointValue,
   useColorModeValue,
+  Wrap,
+  WrapItem,
+  Image,
+  Center,
+  Flex,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import referlist from "referlist";
+import CallToActionBlock from "./call-to-action-block";
+import preview1 from "./images/preview1.jpg";
+import preview2 from "./images/preview2.jpg";
+import preview3 from "./images/preview3.jpg";
+import preview4 from "./images/preview4.jpg";
 
 const Waitlist = () => {
-  useEffect(() => {
-    referlist.initialize({ domain: "scribble" });
-  }, []);
-
   return (
-    <Box
-      id="requestaccess"
-      bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )"
-    >
-      <Container py={{ base: "48", md: "72" }}>
+    <Box bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )">
+      <Container py={{ base: "16", md: "24" }}>
         <Box
           bg="bg-surface"
           py={{ base: "10", md: "16" }}
@@ -39,36 +41,31 @@ const Waitlist = () => {
           >
             <Stack spacing={{ base: "4", md: "5" }}>
               <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
-                Request Beta Access
+                We take care of the rest! ✨
               </Heading>
               <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Scribble couldn't be possible without the amazing network of
-                early supporters we have. If you want to be among the first
-                companies to go live on Scribble, lets get to work!
+                Every monday we will email you highlights from your pets
+                adventure through the Whiskerverse:
               </Text>
-            </Stack>
-            <Stack
-              direction={{ base: "column", md: "row" }}
-              spacing="4"
-              width="full"
-              maxW={{ base: "md", xl: "lg" }}
-            >
-              <FormControl flex="1">
-                <Input
-                  type="email"
-                  size="lg"
-                  placeholder="Enter your email"
-                  id="referlistemail"
-                />
-                <FormHelperText color="subtle">
-                  We will never sell your contact information.
-                </FormHelperText>
-              </FormControl>
-              <Button id="referlistbutton" variant="primary" size="lg">
-                Request
-              </Button>
+              <Wrap spacing="6">
+                <WrapItem>
+                  <Image src={preview1} />
+                </WrapItem>
+                <WrapItem>
+                  <Image src={preview2} />
+                </WrapItem>
+                <WrapItem>
+                  <Image src={preview3} />
+                </WrapItem>
+                <WrapItem>
+                  <Image src={preview4} />
+                </WrapItem>
+              </Wrap>
             </Stack>
           </Stack>
+          <Center>
+            <CallToActionBlock />
+          </Center>
         </Box>
       </Container>
     </Box>

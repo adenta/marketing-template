@@ -6,8 +6,8 @@ import {
   Divider,
   Flex,
   Heading,
-  HStack,
   Icon,
+  useColorModeValue as mode,
   Image,
   Square,
   Stack,
@@ -18,6 +18,9 @@ import { FiArrowRight, FiWifiOff } from "react-icons/fi";
 import { FaBalanceScale } from "react-icons/fa";
 import { GiFruitBowl } from "react-icons/gi";
 import miley from "./images/miley.jpg";
+import miley2 from "./images/miley2.jpg";
+import miley3 from "./images/miley3.jpg";
+import FeatureRow from "./images/feature-row";
 
 export const Features = () => (
   <Box as="section" bg="bg-surface">
@@ -40,10 +43,32 @@ export const Features = () => (
             Upload 10-20 pictures of your pet, and we take care of the rest.
           </Text>
         </Stack>
-        <HStack>
-          <Flex width="100%" align="center" justify="center">
-            <Heading size="md" whiteSpace="pre-wrap">
-              {"Take pictures from\n different angles"}
+        <FeatureRow
+          image={miley3}
+          caption={"Take pictures from different angles"}
+        />
+        <FeatureRow
+          image={miley2}
+          caption={"Use a variety of poses"}
+          reverseDirection
+        />
+        <FeatureRow
+          image={miley}
+          caption={"Hold a treat behind the camera so they look up!"}
+        />
+        {/* <Stack direction={["column", "row"]}>
+          <Flex width={["100%", "80%"]} align="center" justify="center">
+            <Heading
+              borderRadius="lg"
+              maxWidth="96"
+              padding="3"
+              background="gray.100"
+              size="md"
+              textAlign="center"
+              color={mode("blue.600", "blue.300")}
+              whiteSpace="pre-wrap"
+            >
+              {"Use a variety of poses"}
             </Heading>
           </Flex>
           <Box width="full" overflow="hidden">
@@ -51,11 +76,36 @@ export const Features = () => (
               maxW="100%"
               minH={{ base: "100%", lg: "560px" }}
               objectFit="cover"
-              src={miley}
-              alt="Developer"
+              src={miley2}
+              alt="Miley"
             />
           </Box>
-        </HStack>
+        </Stack>
+        <Stack direction={["column", "row"]}>
+          <Flex width="80%" align="center" justify="center">
+            <Heading
+              borderRadius="lg"
+              maxWidth="96"
+              padding="3"
+              background="gray.100"
+              size="md"
+              textAlign="center"
+              color={mode("blue.600", "blue.300")}
+              whiteSpace="pre-wrap"
+            >
+              {"Hold a treat behind the camera so they look up!"}
+            </Heading>
+          </Flex>
+          <Box width="full" overflow="hidden">
+            <Image
+              maxW="100%"
+              minH={{ base: "100%", lg: "560px" }}
+              objectFit="cover"
+              src={miley3}
+              alt="Miley"
+            />
+          </Box>
+        </Stack> */}
       </Stack>
     </Container>
   </Box>
