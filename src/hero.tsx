@@ -56,7 +56,7 @@ export function Hero() {
               fontWeight="medium"
             >
               We use magic &amp; science to track your pet across the{" "}
-              <i>Whiskerverse</i>, and send you pictures weekly.
+              <i>Whiskerverse</i>, and send you pictures we find.
             </Text>
             <CallToActionBlock />
           </Box>
