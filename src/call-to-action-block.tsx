@@ -14,7 +14,7 @@ const CallToActionBlock = () => {
     <Box>
       <Stack direction={{ base: "column", md: "row" }} spacing="4" mt="8">
         <LinkBox>
-          <LinkOverlay href="https://buy.stripe.com/4gw8zp8MC6yk3kI6oo">
+          <LinkOverlay href={import.meta.env.VITE_STRIPE_CHECKOUT_URL}>
             <Button
               size="lg"
               minW="210px"
