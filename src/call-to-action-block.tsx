@@ -27,12 +27,12 @@ const CallToActionBlock = () => {
           </LinkOverlay>
         </LinkBox>
       </Stack>
-      <Text mt="8" color={mode("gray.600", "gray.400")}>
+      {/* <Text mt="8" color={mode("gray.600", "gray.400")}>
         Already have an account?{" "}
         <Link href="https://app.whiskerverse.com" textDecoration="underline">
           Log in
         </Link>
-      </Text>
+      </Text> */}
     </Box>
   );
 };

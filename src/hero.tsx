@@ -44,10 +44,10 @@ export function Hero() {
               size="3xl"
               color={mode("blue.600", "blue.300")}
               mt="8"
-              fontWeight="extrabold"
+              fontWeight="light"
               letterSpacing="tight"
             >
-              AI pictures of your pet, weekly
+              Pictures of <b>your pet</b>, made with AI
             </Heading>
             <Text
               color={mode("gray.600", "gray.400")}
@@ -55,8 +55,8 @@ export function Hero() {
               fontSize="lg"
               fontWeight="medium"
             >
-              We use magic &amp; science to track your pet across the{" "}
-              <i>Whiskerverse</i>, and send you the pictures we find.
+              Upload 10-20 pictures of your pet, and recieve new AI art every
+              week.
             </Text>
             <CallToActionBlock />
           </Box>
