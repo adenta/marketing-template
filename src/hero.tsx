@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import * as React from "react";
 import { HiPlay } from "react-icons/hi";
 import CallToActionBlock from "./call-to-action-block";
-import heroImage from "./images/hero-image.jpg";
+import greetingCardMock from "./images/greeting-card-mock.jpg";
 
 export function Hero() {
   return (
@@ -47,17 +47,9 @@ export function Hero() {
               fontWeight="light"
               letterSpacing="tight"
             >
-              Pictures of <b>your pet</b>, made with AI
+              Greeting cards with <b>your pet</b>
             </Heading>
-            <Text
-              color={mode("gray.600", "gray.400")}
-              mt="4"
-              fontSize="lg"
-              fontWeight="medium"
-            >
-              Upload 10-20 pictures of your pet, and recieve new AI art every
-              week.
-            </Text>
+
             <CallToActionBlock />
           </Box>
           <motion.div
@@ -77,7 +69,7 @@ export function Hero() {
                 zIndex="1"
                 h={{ lg: "100%" }}
                 objectFit="cover"
-                src={heroImage}
+                src={greetingCardMock}
                 alt="Miley"
               />
               <Box

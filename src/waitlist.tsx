@@ -45,10 +45,6 @@ const Waitlist = () => {
               <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
                 We take care of the rest! ✨
               </Heading>
-              <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Every week we will email you highlights from your pets adventure
-                through the Whiskerverse. This is Miley!
-              </Text>
               <Wrap spacing="6">
                 <WrapItem>
                   <Image src={preview1} />
