@@ -24,6 +24,12 @@ import preview3 from "./images/preview3.jpg";
 import preview4 from "./images/preview4.jpg";
 import preview5 from "./images/preview5.jpg";
 import preview6 from "./images/preview6.jpg";
+import previewCat1 from "./images/preview1.jpg";
+import previewCat2 from "./images/preview2.jpg";
+import previewCat3 from "./images/preview3.jpg";
+import previewCat4 from "./images/preview4.jpg";
+import previewCat5 from "./images/preview5.jpg";
+import previewCat6 from "./images/preview6.jpg";
 
 const Waitlist = () => {
   return (
@@ -47,22 +53,58 @@ const Waitlist = () => {
               </Heading>
               <Wrap spacing="6">
                 <WrapItem>
-                  <Image src={preview1} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat1
+                        : preview1
+                    }
+                  />
                 </WrapItem>
                 <WrapItem>
-                  <Image src={preview2} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat2
+                        : preview2
+                    }
+                  />
                 </WrapItem>
                 <WrapItem>
-                  <Image src={preview3} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat3
+                        : preview3
+                    }
+                  />
                 </WrapItem>
                 <WrapItem>
-                  <Image src={preview6} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat6
+                        : preview6
+                    }
+                  />
                 </WrapItem>
                 <WrapItem>
-                  <Image src={preview5} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat5
+                        : preview5
+                    }
+                  />
                 </WrapItem>
                 <WrapItem>
-                  <Image src={preview4} />
+                  <Image
+                    src={
+                      import.meta.env.VITE_PET_TYPE == "cat"
+                        ? previewCat4
+                        : preview4
+                    }
+                  />
                 </WrapItem>
               </Wrap>
             </Stack>

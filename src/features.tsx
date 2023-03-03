@@ -20,6 +20,9 @@ import { GiFruitBowl } from "react-icons/gi";
 import miley from "./images/miley.jpg";
 import miley2 from "./images/miley2.jpg";
 import miley3 from "./images/miley3.jpg";
+import cat from "./images/miley.jpg";
+import cat2 from "./images/miley2.jpg";
+import cat3 from "./images/miley3.jpg";
 import FeatureRow from "./images/feature-row";
 
 export const Features = () => (
@@ -44,16 +47,16 @@ export const Features = () => (
           </Text>
         </Stack>
         <FeatureRow
-          image={miley3}
+          image={import.meta.env.VITE_PET_TYPE == "cat" ? cat3 : miley3}
           caption={"Take pictures from different angles"}
         />
         <FeatureRow
-          image={miley2}
+          image={import.meta.env.VITE_PET_TYPE == "cat" ? cat2 : miley2}
           caption={"Use a variety of poses"}
           reverseDirection
         />
         <FeatureRow
-          image={miley}
+          image={import.meta.env.VITE_PET_TYPE == "cat" ? cat : miley}
           caption={"Hold a treat behind the camera so they look up!"}
         />
       </Stack>

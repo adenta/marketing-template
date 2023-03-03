@@ -13,6 +13,7 @@ import * as React from "react";
 import { HiPlay } from "react-icons/hi";
 import CallToActionBlock from "./call-to-action-block";
 import greetingCardMock from "./images/greeting-card-mock.jpg";
+import greetingCardMockCat from "./images/greeting-card-mock.jpg";
 
 export function Hero() {
   return (
@@ -47,7 +48,8 @@ export function Hero() {
               fontWeight="light"
               letterSpacing="tight"
             >
-              Greeting cards with <b>your pet</b>
+              Greeting cards with{" "}
+              <b>your {import.meta.env.VITE_PET_TYPE || "pet"}</b>
             </Heading>
 
             <CallToActionBlock />
@@ -69,7 +71,11 @@ export function Hero() {
                 zIndex="1"
                 h={{ lg: "100%" }}
                 objectFit="cover"
-                src={greetingCardMock}
+                src={
+                  import.meta.env.VITE_PET_TYPE == "cat"
+                    ? greetingCardMockCat
+                    : greetingCardMock
+                }
                 alt="Miley"
               />
               <Box
