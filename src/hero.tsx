@@ -13,7 +13,7 @@ import * as React from "react";
 import { HiPlay } from "react-icons/hi";
 import CallToActionBlock from "./call-to-action-block";
 import greetingCardMock from "./images/greeting-card-mock.jpg";
-import greetingCardMockCat from "./images/greeting-card-mock.jpg";
+import greetingCardMockCat from "./images/greeting-card-cat-mock.jpg";
 
 export function Hero() {
   return (

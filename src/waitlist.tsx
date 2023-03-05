@@ -24,12 +24,12 @@ import preview3 from "./images/preview3.jpg";
 import preview4 from "./images/preview4.jpg";
 import preview5 from "./images/preview5.jpg";
 import preview6 from "./images/preview6.jpg";
-import previewCat1 from "./images/preview1.jpg";
-import previewCat2 from "./images/preview2.jpg";
-import previewCat3 from "./images/preview3.jpg";
-import previewCat4 from "./images/preview4.jpg";
-import previewCat5 from "./images/preview5.jpg";
-import previewCat6 from "./images/preview6.jpg";
+import previewCat1 from "./images/preview-cat-1.jpg";
+import previewCat2 from "./images/preview-cat-2.jpg";
+import previewCat3 from "./images/preview-cat-3.jpg";
+import previewCat4 from "./images/preview-cat-4.jpg";
+import previewCat5 from "./images/preview-cat-5.jpg";
+import previewCat6 from "./images/preview-cat-6.jpg";
 
 const Waitlist = () => {
   return (

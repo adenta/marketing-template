@@ -20,9 +20,9 @@ import { GiFruitBowl } from "react-icons/gi";
 import miley from "./images/miley.jpg";
 import miley2 from "./images/miley2.jpg";
 import miley3 from "./images/miley3.jpg";
-import cat from "./images/miley.jpg";
-import cat2 from "./images/miley2.jpg";
-import cat3 from "./images/miley3.jpg";
+import cat from "./images/blue.jpg";
+import cat2 from "./images/blue2.jpg";
+import cat3 from "./images/blue3.jpg";
 import FeatureRow from "./images/feature-row";
 
 export const Features = () => (
