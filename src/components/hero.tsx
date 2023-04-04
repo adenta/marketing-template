@@ -8,7 +8,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-
+import house from "../../public/house.jpeg";
 export const Hero = () => (
   <Box as="section" bg="bg-surface">
     <Box position="relative" height={{ lg: "720px" }}>
@@ -26,27 +26,26 @@ export const Hero = () => (
                 alignSelf="start"
                 size={{ base: "md", md: "lg" }}
               >
-                New components available
+                Perch
               </Badge>
               <Stack
                 spacing={{ base: "4", md: "6" }}
                 maxW={{ md: "xl", lg: "md", xl: "xl" }}
               >
                 <Heading size={{ base: "md", md: "xl" }}>
-                  Create your app remarkable fast
+                  Golden Girls as a Service
                 </Heading>
                 <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                  Choose from over 210+ beautiful and responsive components and
-                  build your app twice as fast.
+                  Live out your golden years with friends in style.
                 </Text>
               </Stack>
             </Stack>
             <Stack direction={{ base: "column", md: "row" }} spacing="3">
               <Button variant="primary" size={{ base: "lg", md: "xl" }}>
-                Buy now
+                Become a Resident
               </Button>
               <Button variant="secondary" size={{ base: "lg", md: "xl" }}>
-                Learm more
+                Host your Property
               </Button>
             </Stack>
           </Stack>
@@ -60,12 +59,7 @@ export const Hero = () => (
               clipPath: { lg: "polygon(7% 0%, 100% 0%, 100% 100%, 0% 100%)" },
             }}
           >
-            <Img
-              boxSize="full"
-              objectFit="cover"
-              src="https://tinyurl.com/yeyjvptc"
-              alt="Lady at work"
-            />
+            <Img boxSize="full" objectFit="cover" src={house} />
           </Box>
         </Stack>
       </Container>

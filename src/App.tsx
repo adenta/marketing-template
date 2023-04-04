@@ -9,6 +9,10 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { Hero } from "./components/hero";
+import { Navbar } from "./components/navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
 
 const myTheme = extendTheme(
   {
@@ -16,10 +20,22 @@ const myTheme = extendTheme(
   },
   theme
 );
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "about",
+    element: <About />,
+  },
+]);
 function App() {
   return (
     <ChakraProvider theme={myTheme}>
-      <Hero />
+      <Navbar />
+      <RouterProvider router={router} />
     </ChakraProvider>
   );
 }
