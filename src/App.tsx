@@ -20,19 +20,13 @@ const myTheme = extendTheme(
   theme
 );
 function App() {
-  useEffect(() => {
-    posthog.init("phc_Uy9zUlCcDQwimB2KCgsZ2lS9KsTmEzi2u9NVyVNoPNK", {
-      api_host: "https://app.posthog.com",
-    });
-  }, []);
+  // useEffect(() => {
+  //   posthog.init("phc_Uy9zUlCcDQwimB2KCgsZ2lS9KsTmEzi2u9NVyVNoPNK", {
+  //     api_host: "https://app.posthog.com",
+  //   });
+  // }, []);
 
-  return (
-    <ChakraProvider theme={myTheme}>
-      <Hero />
-      <Features />
-      <Waitlist />
-    </ChakraProvider>
-  );
+  return <ChakraProvider theme={myTheme}></ChakraProvider>;
 }
 
 export default App;
