@@ -10,6 +10,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { FiHelpCircle, FiMenu, FiSearch, FiSettings } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 import { Logo } from "./logo";
 
 export const Navbar = () => {
@@ -23,12 +24,13 @@ export const Navbar = () => {
               <Logo />
               {isDesktop && (
                 <ButtonGroup variant="ghost" spacing="1">
-                  <a href="/">
-                    <Button>Home</Button>
-                  </a>
-                  <a href="/about">
-                    <Button>About</Button>
-                  </a>
+                  <Button as={NavLink} to="/" end>
+                    Home
+                  </Button>
+
+                  <Button as={NavLink} to="/about">
+                    About
+                  </Button>
                 </ButtonGroup>
               )}
             </HStack>

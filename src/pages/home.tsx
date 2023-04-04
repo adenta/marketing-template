@@ -1,7 +1,13 @@
 import { Hero } from "../components/hero";
+import { Navbar } from "../components/navbar";
 
 const Home = () => {
-  return <Hero />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 };
 
 export default Home;

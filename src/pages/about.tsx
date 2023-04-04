@@ -1,8 +1,14 @@
 import { Heading } from "@chakra-ui/react";
 import { Hero } from "../components/hero";
+import { Navbar } from "../components/navbar";
 
 const About = () => {
-  return <Heading>Agout</Heading>;
+  return (
+    <>
+      <Navbar />
+      <Heading>Agout</Heading>
+    </>
+  );
 };
 
 export default About;

@@ -34,7 +34,6 @@ const router = createBrowserRouter([
 function App() {
   return (
     <ChakraProvider theme={myTheme}>
-      <Navbar />
       <RouterProvider router={router} />
     </ChakraProvider>
   );
