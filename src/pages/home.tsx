@@ -24,6 +24,7 @@ We lease properties and, in turn, re-lease each bedroom to individuals who want 
 Perch takes the hassle out of property leasing by managing all aspects of the landlord and renter experience. We manage marketing and renter acquisition, renter compatibility matching, and lease management. 
 
 After leasing, Perch manages the property, the renter experience, and all renter services.
+
 `}
           </Text>
         </Container>

@@ -3,7 +3,6 @@ import {
   Button,
   Container,
   FormControl,
-  FormHelperText,
   FormLabel,
   Heading,
   HStack,
@@ -18,10 +17,6 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
 
 const Newsletter = () => {
-  const [firstName, setFirstName] = React.useState<string>("");
-  const [lastName, setLastName] = React.useState<string>("");
-  const [emailAddress, setEmailAddress] = React.useState<string>("");
-
   return (
     <Box bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )">
       <Container py={{ base: "16", md: "24" }}>
@@ -32,79 +27,88 @@ const Newsletter = () => {
           borderRadius="lg"
           boxShadow="sm"
         >
-          <Stack
-            spacing={{ base: "8", md: "8" }}
-            direction={{ base: "column", lg: "row" }}
-            justify="space-between"
-          >
-            <Stack spacing={{ base: "4", md: "5" }}>
-              <Heading size={{ base: "sm", md: "md" }}>
-                Sign up for our newsletter
-              </Heading>
-              <Text fontSize={{ base: "lg", md: "xl" }} color="muted">
-                Join us on our Journey{" "}
-              </Text>
-            </Stack>
-            <Stack
-              direction={{ base: "column", md: "row" }}
-              spacing="4"
-              width="full"
-              maxW={{ base: "md", xl: "lg" }}
+          <Text paddingBottom="6">
+            Sign up below to receive more information about Perch Houses.
+          </Text>
+          <div id="mc_embed_signup">
+            <form
+              action="https://perchhousing.us21.list-manage.com/subscribe/post?u=440523372c413dcf4ab806300&amp;id=c71fdcfe70&amp;f_id=00ada9e1f0"
+              method="post"
+              id="mc-embedded-subscribe-htmlForm"
+              name="mc-embedded-subscribe-htmlForm"
+              className="validate"
+              target="_blank"
+              noValidate
             >
-              <MailchimpSubscribe
-                url={url}
-                render={({ subscribe, status, message }) => (
-                  <div>
-                    <VStack>
-                      <HStack width="100%">
-                        <FormControl>
-                          <FormLabel>First Name</FormLabel>
-                          <Input
-                            value={firstName}
-                            onChange={(e) => {
-                              setFirstName(e.currentTarget.value);
-                            }}
-                          />
-                        </FormControl>
-                        <FormControl>
-                          <FormLabel>Last Name</FormLabel>
-                          <Input
-                            value={lastName}
-                            onChange={(e) => {
-                              setLastName(e.currentTarget.value);
-                            }}
-                          />
-                        </FormControl>
-                      </HStack>
-                      <HStack align="end" width="100%">
-                        <FormControl>
-                          <FormLabel>Email Address</FormLabel>
-                          <Input
-                            type="email"
-                            value={emailAddress}
-                            onChange={(e) => {
-                              setEmailAddress(e.currentTarget.value);
-                            }}
-                          />
-                        </FormControl>
-                        <Button
-                          onClick={() => {
-                            subscribe({
-                              EMAIL: emailAddress,
-                            });
-                          }}
-                        >
-                          Submit
-                        </Button>
-                      </HStack>
-                      <div dangerouslySetInnerHTML={status} />
-                      <div dangerouslySetInnerHTML={message} />
-                    </VStack>
-                  </div>
-                )}
-              />
-            </Stack>
-          </Stack>
+              <VStack spacing="4" id="mc_embed_signup_scroll">
+                <FormControl>
+                  <FormLabel htmlFor="mce-EMAIL">Email Address</FormLabel>
+                  <Input
+                    type="email"
+                    name="EMAIL"
+                    className="required email"
+                    id="mce-EMAIL"
+                    required
+                  />
+                  <span
+                    id="mce-EMAIL-HELPERTEXT"
+                    className="helper_text"
+                  ></span>
+                </FormControl>
+                <FormControl>
+                  <FormLabel htmlFor="mce-FNAME">First Name</FormLabel>
+                  <Input type="text" name="FNAME" className="" id="mce-FNAME" />
+                  <span
+                    id="mce-FNAME-HELPERTEXT"
+                    className="helper_text"
+                  ></span>
+                </FormControl>
+                <FormControl>
+                  <FormLabel htmlFor="mce-LNAME">Last Name </FormLabel>
+                  <Input type="text" name="LNAME" className="" id="mce-LNAME" />
+                  <span
+                    id="mce-LNAME-HELPERTEXT"
+                    className="helper_text"
+                  ></span>
+                </FormControl>
+                <div hidden>
+                  <input type="hidden" name="tags" value="464047" />
+                </div>
+                <div id="mce-responses" className="clear foot">
+                  <div
+                    className="response"
+                    id="mce-error-response"
+                    style={{ display: "none" }}
+                  ></div>
+                  <div
+                    className="response"
+                    id="mce-success-response"
+                    style={{ display: "none" }}
+                  ></div>
+                </div>
+                <div
+                  style={{ position: "absolute", left: "-5000px" }}
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_440523372c413dcf4ab806300_c71fdcfe70"
+                    tabIndex={-1}
+                    value=""
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  className="button"
+                >
+                  Subscribe
+                </Button>
+              </VStack>
+            </form>
+          </div>
         </Box>
       </Container>
     </Box>
