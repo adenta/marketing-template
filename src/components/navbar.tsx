@@ -16,24 +16,22 @@ import { Logo } from "./logo";
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   return (
-    <Box as="section" pb={{ base: "12", md: "24" }}>
+    <Box as="section">
       <Box as="nav" bg="bg-surface" boxShadow="sm">
         <Container py={{ base: "3", lg: "4" }}>
           <Flex justify="space-between">
-            <HStack spacing="4">
-              <Logo />
-              {isDesktop && (
-                <ButtonGroup variant="ghost" spacing="1">
-                  <Button as={NavLink} to="/" end>
-                    Home
-                  </Button>
+            <Logo />
+            {isDesktop && (
+              <ButtonGroup variant="ghost" spacing="1">
+                <Button as={NavLink} to="/" end>
+                  Home
+                </Button>
 
-                  <Button as={NavLink} to="/about">
-                    About
-                  </Button>
-                </ButtonGroup>
-              )}
-            </HStack>
+                <Button as={NavLink} to="/about">
+                  About
+                </Button>
+              </ButtonGroup>
+            )}
           </Flex>
         </Container>
       </Box>
