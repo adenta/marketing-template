@@ -18,7 +18,10 @@ const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
 
 const Newsletter = () => {
   return (
-    <Box bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )">
+    <Box
+      id="contact-us"
+      bgGradient="linear(to-b, bg-accent 50%, bg-canvas 50%, )"
+    >
       <Container py={{ base: "16", md: "24" }}>
         <Box
           bg="bg-surface"
@@ -27,8 +30,10 @@ const Newsletter = () => {
           borderRadius="lg"
           boxShadow="sm"
         >
-          <Text paddingBottom="6">
-            Sign up below to receive more information about Perch Houses.
+          <Text fontSize="3xl" paddingBottom="6">
+            To learn more about Perch Houses, please enter your information
+            below. We'll be in touch with a brief on how to maximize your rental
+            revenue.
           </Text>
           <div id="mc_embed_signup">
             <form
@@ -104,7 +109,7 @@ const Newsletter = () => {
                   id="mc-embedded-subscribe"
                   className="button"
                 >
-                  Subscribe
+                  Submit
                 </Button>
               </VStack>
             </form>

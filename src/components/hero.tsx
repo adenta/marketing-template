@@ -1,59 +1,106 @@
 import {
-  Badge,
   Box,
   Button,
-  Container,
+  Flex,
   Heading,
+  HStack,
   Img,
+  Input,
+  InputGroup,
+  InputRightElement,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
-import house from "../../public/house.png";
+import { HiChevronRight } from "react-icons/hi";
+import banner from "../../public/banner.png";
 export const Hero = () => {
-  const [isOpen, setIsOpen] = React.useState<boolean>(false);
   return (
-    <>
-      <Box as="section" bg="bg-surface">
-        <Box position="relative" height={{ lg: "720px" }}>
-          <Container py={{ base: "16", md: "24" }} height="full">
-            <Stack
-              direction={{ base: "column", lg: "row" }}
-              spacing={{ base: "16" }}
-              align={{ lg: "center" }}
-              height="full"
+    <Box as="section" position="relative">
+      <Box paddingBottom="32" position="relative" zIndex={1}>
+        <Box
+          maxW={{ base: "xl", md: "7xl" }}
+          mx="auto"
+          px={{ base: "6", md: "8" }}
+          color="white"
+        >
+          <Box maxW="xl">
+            <Heading
+              color="black"
+              as="h1"
+              size="3xl"
+              lineHeight="1.2"
+              fontWeight="extrabold"
             >
-              <Stack spacing={{ base: "8", md: "12" }}>
-                <Stack spacing="4">
-                  <Stack
-                    spacing={{ base: "4", md: "6" }}
-                    maxW={{ md: "xl", lg: "md", xl: "xl" }}
-                  >
-                    <Heading size={{ base: "md", md: "xl" }}>
-                      We provide property owners hassle-free rental income
-                      through co-living for middle-class seniors.
-                    </Heading>
-                  </Stack>
-                </Stack>
-              </Stack>
-              <Box
-                pos={{ lg: "absolute" }}
-                right="0"
-                bottom="0"
-                w={{ base: "full", lg: "50%" }}
-                height={{ base: "96", lg: "full" }}
-                sx={{
-                  clipPath: {
-                    lg: "polygon(7% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                  },
-                }}
+              Lease your property for more money and less hassle
+            </Heading>
+            <Text color="black" fontSize={{ md: "2xl" }} mt="4" maxW="lg">
+              Perch Houses is a new type of co-living property management
+              platform that brings together women tenants age 55+ for
+              high-quality living
+            </Text>
+            <div id="mc_embed_signup">
+              <form
+                action="https://perchhousing.us21.list-manage.com/subscribe/post?u=440523372c413dcf4ab806300&amp;id=c71fdcfe70&amp;f_id=00ada9e1f0"
+                method="post"
+                id="mc-embedded-subscribe-htmlForm"
+                name="mc-embedded-subscribe-htmlForm"
+                className="validate"
+                target="_blank"
+                noValidate
               >
-                <Img boxSize="full" objectFit="cover" src={house} />
-              </Box>
-            </Stack>
-          </Container>
+                <InputGroup size="lg" marginTop="12">
+                  <Input
+                    borderRadius="0"
+                    color="black"
+                    pr="4.5rem"
+                    placeholder="Email Address"
+                    type="email"
+                    name="EMAIL"
+                    className="required email"
+                    id="mce-EMAIL"
+                    required
+                  />
+                  <InputRightElement width="4.5rem" marginRight=".25rem">
+                    <Button
+                      variant="solid"
+                      backgroundColor="brand"
+                      h="2.25rem"
+                      size="lg"
+                      type="submit"
+                      value="Subscribe"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      className="button"
+                    >
+                      Submit
+                    </Button>
+                  </InputRightElement>
+                </InputGroup>
+              </form>
+            </div>
+          </Box>
         </Box>
       </Box>
-    </>
+      <Flex
+        id="image-wrapper"
+        position="absolute"
+        insetX="0"
+        insetY="0"
+        w="full"
+        h="full"
+        overflow="hidden"
+        align="center"
+      >
+        <Box position="relative" w="full" h="full">
+          <Img
+            src={banner}
+            alt="Main Image"
+            w="full"
+            h="full"
+            position="absolute"
+          />
+        </Box>
+      </Flex>
+    </Box>
   );
 };

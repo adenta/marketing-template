@@ -15,7 +15,7 @@ const myTheme = extendTheme(
       heading: `'Poppins', sans-serif`,
       body: `'Poppins', sans-serif`,
     },
-    colors: { ...theme.colors, brand: theme.colors.blue },
+    colors: { ...theme.colors, brand: "#427AD3" },
   },
   theme
 );
